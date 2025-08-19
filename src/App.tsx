@@ -14,9 +14,9 @@ function App() {
       </div>
 
       <div className="absolute top-15 left-8">
-        <Folder foldername="Projekte" />
-        <Folder foldername="Über mich" />
-        <Folder foldername="Lebenslauf" />
+        <Folder foldername="Projekte" onClick={() => ""} />
+        <Folder foldername="Über mich" onClick={() => ""} />
+        <Folder foldername="Lebenslauf" onClick={() => ""} />
       </div>
 
       <div>

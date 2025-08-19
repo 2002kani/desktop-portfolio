@@ -13,7 +13,7 @@ function Dock() {
   return (
     <div
       className="fixed bottom-4 left-1/2 transform -translate-x-1/2
-                flex items-center gap-1 p-2 bg-white/40 backdrop-blur-lg
+                flex items-center gap-1 p-1 bg-white/40 backdrop-blur-lg
                 rounded-2xl shadow-lg border border-white/10"
     >
       <img
