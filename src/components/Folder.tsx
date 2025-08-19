@@ -13,7 +13,7 @@ function Folder({ foldername, onClick }: IFolderProps) {
         alt="Ordner"
         height={70}
         width={70}
-        className="cursor-pointer"
+        className="cursor-pointer transition duration-100 ease-in-out hover:brightness-90 active:brightness-70"
         onClick={onClick}
       />
       <p className="text-white font-medium text-sm">{foldername}</p>
