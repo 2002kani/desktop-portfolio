@@ -1,5 +1,6 @@
 import { wallpaper } from "./assets";
 import Dock from "./components/Dock";
+import Folder from "./components/Folder";
 import MenuBar from "./components/MenuBar";
 
 function App() {
@@ -10,6 +11,12 @@ function App() {
     >
       <div>
         <MenuBar />
+      </div>
+
+      <div className="absolute top-15 left-8">
+        <Folder foldername="Projekte" />
+        <Folder foldername="Über mich" />
+        <Folder foldername="Lebenslauf" />
       </div>
 
       <div>

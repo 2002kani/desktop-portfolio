@@ -1,0 +1,22 @@
+import { folderIcon } from "../assets";
+
+interface IFolderProps {
+  foldername: string;
+}
+
+function Folder({ foldername }: IFolderProps) {
+  return (
+    <div className="flex items-center flex-col mb-4">
+      <img
+        src={folderIcon}
+        alt="Ordner"
+        height={70}
+        width={70}
+        className="cursor-pointer"
+      />
+      <p className="text-white font-medium text-sm">{foldername}</p>
+    </div>
+  );
+}
+
+export default Folder;

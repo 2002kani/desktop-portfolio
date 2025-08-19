@@ -11,6 +11,7 @@ import finderIcon from "./finder.png";
 import vscodeIcon from "./vscodeIcon.png";
 import terminalIcon from "./terminalIcon.png";
 import settingsIcon from "./settingsIcon.png";
+import vscodeIconRed from "./vscodeRed.png";
 
 import folderIcon from "./folderIcon.png";
 
@@ -28,4 +29,5 @@ export {
   terminalIcon,
   settingsIcon,
   folderIcon,
+  vscodeIconRed,
 };

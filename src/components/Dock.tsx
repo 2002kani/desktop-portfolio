@@ -1,6 +1,6 @@
 import {
   terminalIcon,
-  vscodeIcon,
+  vscodeIconRed,
   finderIcon,
   eclipseIcon,
   notesIcon,
@@ -19,42 +19,42 @@ function Dock() {
       <img
         src={finderIcon}
         alt="Finder"
-        className="w-13 h-13 hover:scale-115 transition-transform"
+        className="w-13 h-13 hover:scale-110 transition-transform"
       />
       <img
         src={launchpadIcon}
         alt="Launchpad"
-        className="w-13 h-13 hover:scale-115 transition-transform"
+        className="w-13 h-13 hover:scale-110 transition-transform"
       />
       <img
         src={terminalIcon}
         alt="Terminal"
-        className="w-13 h-13 hover:scale-115 transition-transform"
+        className="w-13 h-13 hover:scale-110 transition-transform"
       />
       <img
         src={safariIcon}
         alt="Safari"
-        className="w-13 h-13 hover:scale-115 transition-transform"
+        className="w-13 h-13 hover:scale-110 transition-transform"
       />
       <img
-        src={vscodeIcon}
+        src={vscodeIconRed}
         alt="VS Code"
-        className="w-13 h-13 hover:scale-115 transition-transform"
+        className="w-13 h-13 hover:scale-110 transition-transform"
       />
       <img
         src={eclipseIcon}
         alt="Eclipse"
-        className="w-13 h-13 hover:scale-115 transition-transform"
+        className="w-13 h-13 hover:scale-110 transition-transform"
       />
       <img
         src={notesIcon}
         alt="Notizen"
-        className="w-13 h-13 hover:scale-115 transition-transform"
+        className="w-13 h-13 hover:scale-110 transition-transform"
       />
       <img
         src={settingsIcon}
         alt="Einstellungen"
-        className="w-13 h-13 hover:scale-115 transition-transform"
+        className="w-13 h-13 hover:scale-110 transition-transform"
       />
     </div>
   );
