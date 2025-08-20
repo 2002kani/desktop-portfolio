@@ -2,6 +2,7 @@ import { wallpaper } from "./assets";
 import Dock from "./components/Dock";
 import Folder from "./components/Folder";
 import MenuBar from "./components/MenuBar";
+import PageLayout from "./components/PageLayout";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Folder foldername="Über mich" onClick={() => ""} />
         <Folder foldername="Lebenslauf" onClick={() => ""} />
       </div>
+
+      <PageLayout />
 
       <div>
         <Dock />
