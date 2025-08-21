@@ -11,8 +11,9 @@ function MenuBar() {
     <div className="fixed top-0 left-0 w-full h-7.5 flex items-center justify-between px-4 bg-white/2 backdrop-blur-xl backdrop-saturate-120 z-50 text-white text-sm">
       <div className="flex items-center gap-1.5">
         <p className="text-lg cursor-pointer pr-1.5"></p>
-        {MenuBarItems.map((item) => (
+        {MenuBarItems.map((item, i) => (
           <p
+            key={i}
             className={`transition-colors duration-200 ease-in-out cursor-pointer px-2 py-0.5 ${
               activeItem == item ? "bg-white/30" : "bg-white/0"
             } rounded-sm`}
