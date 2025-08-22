@@ -15,7 +15,7 @@ interface IFolderSidebarProps {
 
 function FolderSidebar({ title, items = [] }: IFolderSidebarProps) {
   return (
-    <div className="w-[23%] h-[100%] bg-purple-200/80 p-2 flex flex-col text-sm text-gray-800 rounded-l-lg">
+    <div className="w-[22%] h-[100%] bg-purple-200/80 p-2 flex flex-col text-sm text-gray-800 rounded-l-lg">
       <div className="flex gap-1.5 pl-3 pt-3">
         <Circle fill="#FF605C" size={12} color="#FF605C" />
         <Circle fill="#FFBD44" size={12} color="#FFBD44" />
