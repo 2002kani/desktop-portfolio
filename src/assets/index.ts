@@ -12,6 +12,7 @@ import vscodeIcon from "./vscodeIcon.png";
 import terminalIcon from "./terminalIcon.png";
 import settingsIcon from "./settingsIcon.png";
 import vscodeIconRed from "./vscodeRed.png";
+import binIcon from "./binIcon.png";
 
 import folderIcon from "./folderIcon.png";
 
@@ -30,4 +31,5 @@ export {
   settingsIcon,
   folderIcon,
   vscodeIconRed,
+  binIcon,
 };

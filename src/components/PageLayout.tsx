@@ -13,8 +13,6 @@ interface IPageLayoutProps {
 function PageLayout({ onClose }: IPageLayoutProps) {
   const nodeRef = useRef(null);
 
-  useEffect(() => {}, []);
-
   return (
     <div className="absolute inset-0">
       <Draggable
