@@ -11,57 +11,56 @@ import {
 } from "../assets";
 import { Separator } from "./ui/separator";
 
+const DockItems = [
+  {
+    src: finderIcon,
+    alt: "Finder",
+  },
+  {
+    src: launchpadIcon,
+    alt: "Launchpad",
+  },
+  {
+    src: terminalIcon,
+    alt: "Terminal",
+  },
+  {
+    src: safariIcon,
+    alt: "Safari",
+  },
+  {
+    src: vscodeIconRed,
+    alt: "VS Code",
+  },
+  {
+    src: eclipseIcon,
+    alt: "Eclipse",
+  },
+  {
+    src: notesIcon,
+    alt: "Notizen",
+  },
+  {
+    src: settingsIcon,
+    alt: "Einstellung",
+  },
+];
+
 function Dock() {
   return (
-    <div
-      className="fixed bottom-2 left-1/2 transform -translate-x-1/2
-                flex items-center gap-1 p-1 bg-white/40 backdrop-blur-lg
-                rounded-2xl shadow-lg border border-white/10"
-    >
-      <img
-        src={finderIcon}
-        alt="Finder"
-        className="w-13 h-13 hover:scale-110 transition-transform cursor-pointer"
-      />
-      <img
-        src={launchpadIcon}
-        alt="Launchpad"
-        className="w-13 h-13 hover:scale-110 transition-transform cursor-pointer"
-      />
-      <img
-        src={terminalIcon}
-        alt="Terminal"
-        className="w-13 h-13 hover:scale-110 transition-transform cursor-pointer"
-      />
-      <img
-        src={safariIcon}
-        alt="Safari"
-        className="w-13 h-13 hover:scale-110 transition-transform cursor-pointer"
-      />
-      <img
-        src={vscodeIconRed}
-        alt="VS Code"
-        className="w-13 h-13 hover:scale-110 transition-transform cursor-pointer"
-      />
-      <img
-        src={eclipseIcon}
-        alt="Eclipse"
-        className="w-13 h-13 hover:scale-110 transition-transform cursor-pointer"
-      />
-      <img
-        src={notesIcon}
-        alt="Notizen"
-        className="w-13 h-13 hover:scale-110 transition-transform cursor-pointer"
-      />
-      <img
-        src={settingsIcon}
-        alt="Einstellungen"
-        className="w-13 h-13 hover:scale-110 transition-transform cursor-pointer"
-      />
+    <div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 flex items-center gap-1 p-1 bg-white/40 backdrop-blur-lg rounded-2xl shadow-lg border border-white/10">
+      {DockItems.map((item, i) => (
+        <img
+          key={i}
+          src={item.src}
+          alt={item.alt}
+          className="w-13 h-13 hover:scale-110 transition-transform cursor-pointer"
+        />
+      ))}
       <Separator orientation="vertical" className="!h-12 mx-2 bg-neutral-600" />
       <img
         src={binIcon}
-        alt="Einstellungen"
+        alt="Papierkorb"
         className="w-13 h-13 hover:scale-110 transition-transform cursor-pointer"
       />
     </div>
