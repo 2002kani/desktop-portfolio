@@ -7,7 +7,9 @@ import {
   safariIcon,
   launchpadIcon,
   settingsIcon,
+  binIcon,
 } from "../assets";
+import { Separator } from "./ui/separator";
 
 function Dock() {
   return (
@@ -53,6 +55,12 @@ function Dock() {
       />
       <img
         src={settingsIcon}
+        alt="Einstellungen"
+        className="w-13 h-13 hover:scale-110 transition-transform cursor-pointer"
+      />
+      <Separator orientation="vertical" className="!h-12 mx-2 bg-neutral-600" />
+      <img
+        src={binIcon}
         alt="Einstellungen"
         className="w-13 h-13 hover:scale-110 transition-transform cursor-pointer"
       />
