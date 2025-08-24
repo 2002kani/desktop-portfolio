@@ -7,10 +7,11 @@ import FolderMenuBar from "./FolderMenuBar";
 import FolderDetails from "./FolderDetails";
 
 interface IPageLayoutProps {
+  activeFolder: string;
   onClose: () => void;
 }
 
-function PageLayout({ onClose }: IPageLayoutProps) {
+function PageLayout({ activeFolder, onClose }: IPageLayoutProps) {
   const nodeRef = useRef(null);
 
   return (
@@ -27,7 +28,7 @@ function PageLayout({ onClose }: IPageLayoutProps) {
         <div ref={nodeRef} className="drag-handle flex w-[60%] h-[75vh]">
           <FolderSidebar onClose={onClose} />
           <div className="flex flex-col flex-1">
-            <FolderMenuBar title="Titel" />
+            <FolderMenuBar title={activeFolder} />
             <FolderDetails />
           </div>
         </div>

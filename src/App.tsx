@@ -6,7 +6,7 @@ import MenuBar from "./components/MenuBar";
 import PageLayout from "./components/PageLayout";
 
 function App() {
-  const [isPageLayoutOpen, setIsPageLayoutOpen] = useState(false);
+  const [activeFolder, setActiveFolder] = useState<string | null>(null);
 
   return (
     <div
@@ -20,20 +20,23 @@ function App() {
       <div className="absolute top-15 left-8">
         <Folder
           foldername="Projekte"
-          onClick={() => setIsPageLayoutOpen(true)}
+          onClick={() => setActiveFolder("Projekte")}
         />
         <Folder
           foldername="Über mich"
-          onClick={() => setIsPageLayoutOpen(true)}
+          onClick={() => setActiveFolder("Über mich")}
         />
         <Folder
           foldername="Lebenslauf"
-          onClick={() => setIsPageLayoutOpen(true)}
+          onClick={() => setActiveFolder("Lebenslauf")}
         />
       </div>
 
-      {isPageLayoutOpen && (
-        <PageLayout onClose={() => setIsPageLayoutOpen(false)} />
+      {activeFolder && (
+        <PageLayout
+          activeFolder={activeFolder}
+          onClose={() => setActiveFolder(null)}
+        />
       )}
 
       <div>

@@ -1,3 +1,4 @@
+import { File } from "lucide-react";
 import type React from "react";
 
 interface ISidebarItemProps {
