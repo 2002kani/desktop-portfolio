@@ -3,7 +3,7 @@ import SidebarItem from "./SidebarItem";
 
 // TODO: Props wie dem screenshot hinbekommen (guck handy)
 
-interface SidebarItemInterface {
+export interface SidebarItemInterface {
   icon: React.ReactNode;
   label: string;
 }

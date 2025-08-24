@@ -1,4 +1,3 @@
-import { File } from "lucide-react";
 import type React from "react";
 
 interface ISidebarItemProps {
@@ -14,7 +13,7 @@ function SidebarItem({ icon, label, key }: ISidebarItemProps) {
       key={key}
     >
       <span className="text-blue-600">{icon}</span>
-      <p className="truncate">{label}</p>
+      <p className="truncate font-medium text-gray-800 opacity-90">{label}</p>
     </li>
   );
 }
