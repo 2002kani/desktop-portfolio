@@ -9,6 +9,9 @@ import {
   BriefcaseBusiness,
   HatGlasses,
   CodeXml,
+  Info,
+  FileUser,
+  Link,
 } from "lucide-react";
 
 export const projectItems: SidebarItemInterface[] = [
@@ -50,5 +53,20 @@ export const aboutMeItems: SidebarItemInterface[] = [
   {
     icon: <HatGlasses size={16} />,
     label: "Interessen",
+  },
+];
+
+export const otherItems: SidebarItemInterface[] = [
+  {
+    icon: <Link size={16} />,
+    label: "Links",
+  },
+  {
+    icon: <FileUser size={16} />,
+    label: "Lebenslauf",
+  },
+  {
+    icon: <Info size={16} />,
+    label: "Information",
   },
 ];

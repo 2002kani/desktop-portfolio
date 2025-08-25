@@ -6,7 +6,11 @@ import FolderSidebar from "./FolderSidebar";
 import FolderMenuBar from "./FolderMenuBar";
 import FolderDetails from "./FolderDetails";
 
-import { projectItems, aboutMeItems } from "@/constants/SidebarItemsConstants";
+import {
+  projectItems,
+  aboutMeItems,
+  otherItems,
+} from "@/constants/SidebarItemsConstants";
 
 interface IPageLayoutProps {
   activeFolder: string;
@@ -16,13 +20,18 @@ interface IPageLayoutProps {
 function PageLayout({ activeFolder, onClose }: IPageLayoutProps) {
   const nodeRef = useRef(null);
 
-  const getFolderItems = (folder) => {
+  const getFolderItems = (folder: string) => {
     if (!folder) return;
 
-    if (folder === "Projekte") {
-      return projectItems;
-    } else if (folder === "Über mich") {
-      return aboutMeItems;
+    switch (folder) {
+      case "Projekte":
+        return projectItems;
+      case "Über mich":
+        return aboutMeItems;
+      case "Sonstiges":
+        return otherItems;
+      default:
+        return [];
     }
   };
 

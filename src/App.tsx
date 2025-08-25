@@ -27,8 +27,8 @@ function App() {
           onClick={() => setActiveFolder("Über mich")}
         />
         <Folder
-          foldername="Lebenslauf"
-          onClick={() => setActiveFolder("Lebenslauf")}
+          foldername="Sonstiges"
+          onClick={() => setActiveFolder("Sonstiges")}
         />
       </div>
 
